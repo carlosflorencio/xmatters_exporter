@@ -8,7 +8,7 @@ import (
 )
 
 var (
-	Config    Configuration
+	Config Configuration
 )
 
 type Configuration struct {
@@ -20,7 +20,7 @@ type Configuration struct {
 func init() {
 	Config = Configuration{
 		Debug: false,
-		Url:   "https://sky.xmatters.com/api/xm/1",
+		Url:   "https://company.xmatters.com/api/xm/1",
 	}
 	arg.MustParse(&Config)
 
@@ -37,3 +37,5 @@ func init() {
 func main() {
 	fmt.Println(Config)
 }
+
+
